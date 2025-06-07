@@ -1,16 +1,14 @@
-import React from "react";
-
-const SearchBar = () => {
-  // 1- User Input
-  // 2- Fetch data from unslplash
-  // 3-
-
-  const handleSubmit = () => {};
-
+const SearchBar = ({ handleSubmit, searchTerm, handleInputChange }) => {
   return (
-    <div onSubmit={handleSubmit}>
-      <input type="text" name="search"></input>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="search"
+        value={searchTerm}
+        onChange={handleInputChange}
+        placeholder="Search for images"
+      ></input>
+    </form>
   );
 };
 

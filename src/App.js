@@ -1,5 +1,5 @@
-import "./App.css";
-import React, { useEffect, useState } from "react";
+import "./index.css";
+import React, { useState } from "react";
 import ImageGallery from "./component/ImageGallery";
 import SearchBar from "./component/SearchBar";
 
@@ -32,8 +32,8 @@ function App() {
     }
   };
   return (
-    <div className="App">
-      <h1 className="text-4xl font-bold text-purple-600">Hello Tailwind!</h1>
+    <div className="d-flex flex-column justifiy-content-center align-items-center">
+      <h1 className="text-center uppercase">Unsplash Search</h1>
       <SearchBar
         handleInputChange={handleInputChange}
         handleSubmit={handleSubmit}
